@@ -7,7 +7,7 @@ const messageRouter=e.Router();
 
 messageRouter.get("/users",protectRoute,getUserForSidebar);
 messageRouter.get("/:id",protectRoute,getMessages);
-messageRouter.put("mark/:id",protectRoute,markMessageAsSeen);
+messageRouter.put("/mark/:id",protectRoute,markMessageAsSeen);
 messageRouter.post("/send/:id",protectRoute,sendMessage);
 
 export default messageRouter;
